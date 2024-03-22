@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Today in Space</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="toy-header">
+      <img
+        src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_188544-9655.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1711065600&semt=sph"
+        alt="toy-header"
+      />
+    </div>
+
+    <div class="container">
+      <form class="add-toy-form">
+        <h3>Subscribe!</h3>
+
+        <input
+          type="text"
+          name="name"
+          value=""
+          placeholder="Name"
+          class="input-text"
+        />
+        <br />
+        <input
+          type="text"
+          name="image"
+          value=""
+          placeholder="Email"
+          class="input-text"
+        />
+        <br />
+        <input
+          type="submit"
+          name="submit"
+          value="Subscribe"
+          class="submit"
+        />
+      </form>
+    </div>
+    <p style="text-align:center">
+      Subscribe to receive our daily newsletter <button id="new-toy-btn"> Subscribe!</button>
+    </p>
+
+    <div id="toy-collection"></div>
+    <script type="text/javascript" src="src/index.js"></script>
+  </body>
+</html>
