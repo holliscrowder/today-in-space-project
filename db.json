@@ -1,83 +1,78 @@
 {
-    "mailingList": [
-        {
-            "name": "user1",
-            "email":"user1@gmail.com"
-        },
-        {
-            "name": "user2",
-            "email": "user2@gmail.com"
-        }
-    ],
-
-    "space": [
-        {
-            "id": "1",
-            "name": "Jasmin Moghbeli",
-            "spaceCraft": "ISS",
-            "age": "40 Years Old",
-            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FJasmin-Moghbeli&psig=AOvVaw1IEQtqV42A7Mm3Of1-FNSr&ust=1711224111970000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCT993UiIUDFQAAAAAdAAAAABAE",
-            "nationality": "American",
-            "time in space": "199d 2h 19m"
-          },
-          {
-            "id": "2",
-            "name": "Andreas Mogensen",
-            "spaceCraft": "ISS",
-            "age": "50 Years Old",
-            "image": "https://www.nasa.gov/wp-content/uploads/2023/10/jsc2022e017107-alt.jpg",
-            "nationality": "Danish",
-            "time in space": "208d 22h 33m"
-          },
-          {
-            "id": "3",
-            "name": "Satoshi Furukawa",
-            "spaceCraft": "ISS",
-            "age": "59 Years Old",
-            "image": "https://www.spacelaunchschedule.com/wp-content/uploads/2024/03/satoshi_furukaw_image_20230826072858.jpeg",
-            "nationality": "Japanese",
-            "time in space": "366d, 8h and 34m"
-          },
-          {
-            "id": "4",
-            "name": "Konstantin Borisov",
-            "spaceCraft": "ISS",
-            "age": "39 Years Old",
-            "image": "https://www.spacelaunchschedule.com/wp-content/uploads/2024/03/konstantin_bori_image_20230826072844.jpg",
-            "nationality": "Russian",
-            "time in space": "199d 2h 20m"
-          },
-          {
-            "id": "5",
-            "name": "Oleg Kononenko",
-            "spaceCraft": "ISS",
-            "age": "59 Years Old",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Kononenko.jpg",
-            "nationality": "Russian",
-            "time in space": "189d 5h"
-          },
-          {
-            "id": "6",
-            "name": "Nikolai Chub",
-            "spaceCraft": "ISS",
-            "age": "39 Years Old",
-            "image": "https://www.nasa.gov/wp-content/uploads/2023/10/jsc2023e052792.jpg",
-            "nationality": "Russian",
-            "time in space": "7h 41m"
-          },
-          {
-            "id": "7",
-            "name": "Loral O'Hara",
-            "spaceCraft": "ISS",
-            "age": "40 Years Old",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Jsc2022e095887_alt.jpg/1200px-Jsc2022e095887_alt.jpg",
-            "nationality": "American",
-            "time in space": "189d 5h"
-          }
- 
-        ]
-      }
-
-
-
-
+  "mailingList": [
+    {
+      "name": "user1",
+      "email": "user1@gmail.com"
+    },
+    {
+      "name": "user2",
+      "email": "user2@gmail.com"
+    },
+  
+  ],
+  "people": [
+    {
+      "id": "1",
+      "name": "Jasmin Moghbeli",
+      "spaceCraft": "ISS",
+      "age": "40 Years Old",
+      "image": "https://cdn.britannica.com/16/254216-050-CF819E10/nasa-astronaut-expedition-jasmin-moghbeli-in-emu-spacesuit.jpg",
+      "nationality": "American",
+      "time in space": "199d 2h 19m"
+    },
+    {
+      "id": "2",
+      "name": "Andreas Mogensen",
+      "spaceCraft": "ISS",
+      "age": "50 Years Old",
+      "image": "https://www.nasa.gov/wp-content/uploads/2023/10/jsc2022e017107-alt.jpg",
+      "nationality": "Danish",
+      "time in space": "208d 22h 33m"
+    },
+    {
+      "id": "3",
+      "name": "Satoshi Furukawa",
+      "spaceCraft": "ISS",
+      "age": "59 Years Old",
+      "image": "https://www.spacelaunchschedule.com/wp-content/uploads/2024/03/satoshi_furukaw_image_20230826072858.jpeg",
+      "nationality": "Japanese",
+      "time in space": "366d, 8h and 34m"
+    },
+    {
+      "id": "4",
+      "name": "Konstantin Borisov",
+      "spaceCraft": "ISS",
+      "age": "39 Years Old",
+      "image": "https://www.spacelaunchschedule.com/wp-content/uploads/2024/03/konstantin_bori_image_20230826072844.jpg",
+      "nationality": "Russian",
+      "time in space": "199d 2h 20m"
+    },
+    {
+      "id": "5",
+      "name": "Oleg Kononenko",
+      "spaceCraft": "ISS",
+      "age": "59 Years Old",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Kononenko.jpg",
+      "nationality": "Russian",
+      "time in space": "189d 5h"
+    },
+    {
+      "id": "6",
+      "name": "Nikolai Chub",
+      "spaceCraft": "ISS",
+      "age": "39 Years Old",
+      "image": "https://www.nasa.gov/wp-content/uploads/2023/10/jsc2023e052792.jpg",
+      "nationality": "Russian",
+      "time in space": "7h 41m"
+    },
+    {
+      "id": "7",
+      "name": "Loral O'Hara",
+      "spaceCraft": "ISS",
+      "age": "40 Years Old",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Jsc2022e095887_alt.jpg/1200px-Jsc2022e095887_alt.jpg",
+      "nationality": "American",
+      "time in space": "189d 5h"
+    }
+  ]
+}
