@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: center;
   background: black;
-  opacity: .8;
+  opacity: 1;
   height: 7rem;
   padding: 1rem;
 }
@@ -62,7 +62,7 @@ button:hover {
   height: auto;
   display: none;
   background: black;
-  opacity: .8;
+  opacity: 1;
 }
 
 .add-space-form {
@@ -96,4 +96,49 @@ button:hover {
   font-size: 18px;
   font-family: monospace;
   margin: 3px;
+}
+
+
+#people-in-space {
+  display: flex;
+  overflow-x: auto;
+  margin: 1rem 0;
+  max-width: calc(100vw - 2rem);
+}
+
+#people-in-space img {
+  flex: 0 1 auto;
+  height: 150px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  margin-left: 5rem
+}
+
+#people-in-space img:last-child {
+  margin-right: 0;
+}
+
+#people-detail {
+  position: relative;
+  margin-left: 30rem
+}
+
+.detail-image {
+  height: 500px;
+}
+
+.name,
+.nationality {
+  position: absolute;
+  left: 10px;
+  padding: 0.25rem 5rem 0.25rem 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.name {
+  bottom: 100px;
+}
+
+.nationality {
+  bottom: 70px;
 }
