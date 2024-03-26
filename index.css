@@ -13,7 +13,7 @@ body {
 }
 
 #space-header img {
-  height: 6rem;
+  height: 8rem;
   width: auto;
 }
 
@@ -97,8 +97,18 @@ button:hover {
   margin: 3px;
 }
 
+.title {
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  color: #333333;
+  border-bottom: 2px solid #cccccc; 
+  padding-bottom: 5px; 
+  font-family: monospace;
+
+}
+
 #apod-video {
-  margin: 10px;
+  position: flex;
   height: 300px;
   width: 600px;
 }
@@ -144,9 +154,9 @@ button:hover {
 }
 
 #apod-video-button {
-  position: absolute;
-  top: 75%;
-  left: 75%;
+  position: flex;
+  top: 64%;
+  left: 43%;
   background-color: black;
   border: none;
   border-radius: 5px;
@@ -161,6 +171,7 @@ button:hover {
   background-color: whitesmoke;
   border: black solid 1px;
   color: black;
+}
 
 #people-in-space {
   display: flex;
@@ -183,11 +194,12 @@ button:hover {
 
 #people-detail {
   position: relative;
-  margin-left: 30rem
+  margin-left: 40%
 }
 
 .detail-image {
-  height: 500px;
+  height: 30%;
+  width: 30%;
 }
 
 .name,
@@ -199,9 +211,9 @@ button:hover {
 }
 
 .name {
-  bottom: 100px;
+  bottom: 35%;
 }
 
 .nationality {
-  bottom: 70px;
+  bottom: 28%;
 }

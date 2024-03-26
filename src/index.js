@@ -161,10 +161,10 @@ const handleClick = (person) => {
     "#people-detail .nationality"
   );
   peopleDetailNationality.textContent = person.nationality;
-  const peopleDetailAge = document.querySelector(".age-display");
+  const peopleDetailAge = document.querySelector("#age-display");
   peopleDetailAge.textContent = person.age;
 
-  const peopleDetailTimeInSpace = document.querySelector(".time-display");
+  const peopleDetailTimeInSpace = document.querySelector("#time-display");
   peopleDetailTimeInSpace.textContent = person["time in space"];
 };
 
