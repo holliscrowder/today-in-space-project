@@ -1,6 +1,14 @@
 body {
-  margin: 0;
+  font-family: Verdana;
+
   font-family: monospace;
+  background-image: linear-gradient(
+    to bottom right,
+    #b07fb6 0%,
+    #50818b,
+    rgb(190, 234, 190) 100%
+  );
+  cursor: url(https://cur.cursors-4u.net/others/oth-8/oth756.cur), auto !important;
 }
 
 #space-header {
@@ -18,7 +26,6 @@ body {
 }
 
 #space-collection {
-  margin: 2rem;
 }
 
 .card {
@@ -28,7 +35,6 @@ body {
   width: 15rem;
   height: 25rem;
   display: inline-grid;
-  margin: 1rem 2rem;
   box-shadow: 3px 4px black;
 }
 
@@ -39,7 +45,6 @@ body {
 }
 
 button {
-  /* position: relative; */
   background-color: black;
   border: none;
   border-radius: 5px;
@@ -79,7 +84,6 @@ button:hover {
   font-size: 18px;
   justify-self: center;
   font-family: monospace;
-  margin: 3px;
 }
 
 .submit:hover {
@@ -104,7 +108,7 @@ button:hover {
   color: #222;
   letter-spacing: 1px;
   text-transform: uppercase;
-  
+
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   grid-template-rows: 27px 0;
@@ -119,7 +123,6 @@ button:hover {
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   height: 5px;
-  background-color: #f8f8f8;
 }
 
 #apod-video {
@@ -143,9 +146,9 @@ button:hover {
   color: white;
   width: 30%;
   text-align: center;
-  top: 52%; 
-  left: 37%; 
-  z-index: 2; 
+  top: 52%;
+  left: 37%;
+  z-index: 2;
 }
 #apod-img-button {
   position: relative;
@@ -159,7 +162,6 @@ button:hover {
   font-size: 18px;
   justify-self: center;
   opacity: 0.5;
-  margin-top: -1.5rem; 
   transform: translateY(-50%);
   z-index: 2;
 }
@@ -193,27 +195,21 @@ button:hover {
 #people-in-space {
   display: flex;
   overflow-x: auto;
-  margin: 1rem 0;
-  max-width: calc(100vw - 2rem);
 }
 
 #people-in-space img {
   flex: 0 1 auto;
   height: 150px;
-  margin-right: 0.5rem;
   cursor: pointer;
-  margin-left: 5rem;
 }
 
 #people-in-space img:last-child {
-  margin-right: 0;
 }
 
-#people-detail {
+/* #people-detail {
   position: relative;
   margin-left: 40%;
- 
-}
+} */
 
 .detail-image {
   height: 30%;
@@ -222,40 +218,34 @@ button:hover {
 
 .name {
   position: relative;
-  left: 10px;
-  bottom: 90px; 
+  bottom: 90px;
   padding: 0.25rem 5rem 0.25rem 1rem;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
 .nationality {
   position: relative;
-  left: 10px; 
-  bottom: 100px; 
+  bottom: 100px;
   padding: 0.25rem 5rem 0.25rem 1rem;
   background-color: rgba(255, 255, 255, 0.8);
 }
 #age-time {
   position: relative;
   top: -100px;
-  left: 40%
 }
 
 .satellite-form {
   position: relative;
-  left: 20%;
 }
 
 .satellite-display p {
   position: relative;
-  left: 20%;
   top: 10%;
 }
 
-#satellite-placeholder {
+/* #satellite-placeholder {
   position: relative;
-  left: 20%;
   height: 60%;
   width: 60%;
   bottom: 5%;
-}
+} */
