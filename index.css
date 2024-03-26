@@ -212,7 +212,8 @@ button:hover {
 #age-time {
   position: relative;
   top: -100px;
-}
+  margin-left: 40%;
+} 
 
 /* Satellite */
 
