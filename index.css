@@ -99,12 +99,11 @@ button:hover {
 
 .title {
   font-size: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #333333;
-  border-bottom: 2px solid #cccccc; 
-  padding-bottom: 5px; 
+  border-bottom: 2px solid #cccccc;
+  padding-bottom: 5px;
   font-family: monospace;
-
 }
 
 #apod-video {
@@ -114,20 +113,20 @@ button:hover {
 }
 
 #apod-img {
-  position: absolute;
+  position: relative;
   left: 1%;
   height: auto;
   width: 80%;
 }
 
 #apod-img-explanation {
-  position: absolute;
+  position: relative;
   float: left;
   background-color: black;
   opacity: 0.6;
   color: white;
   width: 75%;
-  top: 50%;
+  top: 10%;
   text-align: center;
 }
 
@@ -185,7 +184,7 @@ button:hover {
   height: 150px;
   margin-right: 0.5rem;
   cursor: pointer;
-  margin-left: 5rem
+  margin-left: 5rem;
 }
 
 #people-in-space img:last-child {
@@ -194,7 +193,7 @@ button:hover {
 
 #people-detail {
   position: relative;
-  margin-left: 40%
+  margin-left: 40%;
 }
 
 .detail-image {
