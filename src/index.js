@@ -55,8 +55,7 @@ const addAPOD = () => {
     if (apod.media_type === "image") {
       const apodImg = document.createElement("img");
       apodImg.id = "apod-img";
-      apodImg.src =
-        "https://i0.wp.com/www.sciencenews.org/wp-content/uploads/2020/04/041520_mt_supernova_feat.jpg?fit=1028%2C579&ssl=1";
+      apodImg.src = apod.url;
       apodImg.alt = "NASA photo of the day";
 
       // add image "explanation" button
@@ -124,7 +123,7 @@ const displayPeople = async () => {
   try {
     const response = await fetch("http://localhost:3000/people");
     const people = await response.json();
-   
+
     const peopleInSpace = document.querySelector("#people-in-space");
     // biome-ignore lint/complexity/noForEach: <explanation>
     people.forEach((person) => {
@@ -173,8 +172,8 @@ const main = () => {
   document.addEventListener("DOMContentLoaded", () => {
     submitMailingList();
     addAPOD();
-        // Invoke displayPeople here
-        displayPeople();
+    // Invoke displayPeople here
+    displayPeople();
   });
 };
 
