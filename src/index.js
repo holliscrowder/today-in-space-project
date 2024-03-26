@@ -58,19 +58,15 @@ const addAPOD = () => {
       apodImg.src = apod.url;
       apodImg.alt = "NASA photo of the day";
 
-      // add image "explanation" button
-      const apodImgButton = document.createElement("button");
-      apodImgButton.id = "apod-img-button";
-      apodImgButton.textContent = "Explanation";
-
-      apodDIV.append(apodImg, apodImgButton);
+      // apodDIV.append(apodImg, apodImgButton);
+      apodDIV.append(apodImg);
 
       // add explanation when "explanation" button is clicked
       const apodImgExplanation = document.createElement("p");
       apodImgExplanation.id = "apod-img-explanation";
       apodImgExplanation.textContent = apod.explanation;
       let imgExplanationFlag = false;
-      apodImgButton.addEventListener("click", () => {
+      apodImg.addEventListener("mouseover", () => {
         imgExplanationFlag = !imgExplanationFlag;
         apodDIV.append(apodImgExplanation);
         if (imgExplanationFlag) {
