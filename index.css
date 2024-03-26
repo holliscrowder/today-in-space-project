@@ -11,6 +11,8 @@ body {
   cursor: url(https://cur.cursors-4u.net/others/oth-8/oth756.cur), auto !important;
 }
 
+/* Header */
+
 #space-header {
   display: flex;
   justify-content: center;
@@ -25,25 +27,7 @@ body {
   width: auto;
 }
 
-#space-collection {
-}
-
-.card {
-  text-align: center;
-  border: grey solid 1px;
-  padding: 1rem;
-  width: 15rem;
-  height: 25rem;
-  display: inline-grid;
-  box-shadow: 3px 4px black;
-}
-
-.space-avatar {
-  justify-self: center;
-  height: 12rem;
-  width: auto;
-}
-
+/* hide-n-seek subscribe button */
 button {
   background-color: black;
   border: none;
@@ -60,6 +44,8 @@ button:hover {
   border: black solid 1px;
   color: black;
 }
+
+/* Subscribe form */
 
 .container {
   padding: 1rem;
@@ -101,6 +87,8 @@ button:hover {
   margin: 3px;
 }
 
+/* Titles */
+
 .title {
   text-align: center;
   font-size: 30px;
@@ -123,6 +111,11 @@ button:hover {
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   height: 5px;
+}
+
+/* NASA photo of the day */
+
+#space-collection {
 }
 
 #apod-video {
@@ -150,27 +143,6 @@ button:hover {
   left: 37%;
   z-index: 2;
 }
-#apod-img-button {
-  position: relative;
-  left: 20%;
-  background-color: whitesmoke;
-  border: none;
-  border-radius: 5px;
-  height: 3rem;
-  width: max-content;
-  color: black;
-  font-size: 18px;
-  justify-self: center;
-  opacity: 0.5;
-  transform: translateY(-50%);
-  z-index: 2;
-}
-#apod-img-button:hover {
-  background-color: black;
-  border: black solid 1px;
-  color: whitesmoke;
-  opacity: 0.5;
-}
 
 #apod-video-button {
   position: flex;
@@ -192,6 +164,8 @@ button:hover {
   color: black;
 }
 
+/* people in space */
+
 #people-in-space {
   display: flex;
   overflow-x: auto;
@@ -206,10 +180,12 @@ button:hover {
 #people-in-space img:last-child {
 }
 
-/* #people-detail {
+/* people in space detailed */
+
+ #people-detail {
   position: relative;
   margin-left: 40%;
-} */
+} 
 
 .detail-image {
   height: 30%;
@@ -234,6 +210,8 @@ button:hover {
   top: -100px;
 }
 
+/* Satellite */
+
 .satellite-form {
   position: relative;
 }
@@ -243,9 +221,9 @@ button:hover {
   top: 10%;
 }
 
-/* #satellite-placeholder {
+ #satellite-placeholder {
   position: relative;
   height: 60%;
   width: 60%;
   bottom: 5%;
-} */
+} 
