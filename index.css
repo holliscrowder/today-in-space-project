@@ -114,9 +114,9 @@ button:hover {
 
 #apod-img {
   position: relative;
-  left: 1%;
+  left: 30%;
   height: auto;
-  width: 80%;
+  width: 45%;
 }
 
 #apod-img-explanation {
@@ -126,14 +126,13 @@ button:hover {
   opacity: 0.6;
   color: white;
   width: 75%;
-  top: 10%;
+  top: 100%;
   text-align: center;
 }
 
 #apod-img-button {
-  position: absolute;
-  top: 40%;
-  left: 3%;
+  position: relative;
+  left: 20%;
   background-color: whitesmoke;
   border: none;
   border-radius: 5px;
@@ -143,8 +142,9 @@ button:hover {
   font-size: 18px;
   justify-self: center;
   opacity: 0.5;
+  margin-top: -1.5rem; 
+  transform: translateY(-50%);
 }
-
 #apod-img-button:hover {
   background-color: black;
   border: black solid 1px;
@@ -194,6 +194,7 @@ button:hover {
 #people-detail {
   position: relative;
   margin-left: 40%;
+ 
 }
 
 .detail-image {
@@ -201,18 +202,23 @@ button:hover {
   width: 30%;
 }
 
-.name,
-.nationality {
-  position: absolute;
+.name {
+  position: relative;
   left: 10px;
+  bottom: 90px; 
   padding: 0.25rem 5rem 0.25rem 1rem;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.name {
-  bottom: 35%;
-}
-
 .nationality {
-  bottom: 28%;
+  position: relative;
+  left: 10px; 
+  bottom: 100px; 
+  padding: 0.25rem 5rem 0.25rem 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#age-time {
+  position: relative;
+  top: -100px;
+  left: 40%
 }
