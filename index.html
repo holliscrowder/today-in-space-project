@@ -6,21 +6,32 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <!--------------------------- Header ----------------------------->
     <div id="space-header">
-      <img
-        src="img/Screenshot 2024-03-25 131101.png"
-        alt="space-header"
-      />
+      <img src="img/Screenshot 2024-03-25 131101.png" alt="space-header" />
     </div>
-
+    
+    <!--------------------------- Mailing List Form ------------------------------->
     <div class="container">
       <form class="add-space-form">
         <h3>Subscribe!</h3>
 
-        <input type="text" name="name" value="" placeholder="Name" class="input-text"/>
-        <br/>
-        <input type="text" name="email" value="" placeholder="Email" class="input-text"/>
-        <br/>
+        <input
+          type="text"
+          name="name"
+          value=""
+          placeholder="Name"
+          class="input-text"
+        />
+        <br />
+        <input
+          type="text"
+          name="email"
+          value=""
+          placeholder="Email"
+          class="input-text"
+        />
+        <br />
         <input type="submit" name="submit" value="Subscribe" class="submit" />
       </form>
     </div>
@@ -28,32 +39,76 @@
       Subscribe to receive our daily newsletter
       <button id="new-space-btn">Subscribe!</button>
     </p>
+    
+    <!------------------------- NASA Photo of the Day ------------------------------->
     <div id="space-collection">
       <p class="title" style="text-align: center">NASA Photo of the Day</p>
     </div>
-
+    
+    <!--------------------- People in Space -------------------------->
     <div id="people-title">
       <p class="title" style="text-align: center">People in space</p>
     </div>
-    
+
     <div id="people-in-space"></div>
-    
+
     <div id="people-detail">
-      <img class="detail-image" src="http://localhost:3000/people" alt="austronaut" />
+      <img
+        class="detail-image"
+        src="http://localhost:3000/people"
+        alt="austronaut"
+      />
       <h2 class="name"></h2>
       <h3 class="nationality"></h3>
     </div>
-      
-      <div id="age-time">
-       <h3>Age:</h3>
-        <p>
-         <span id="age-display">Age:</span>
-        </p>
-       <h3>Time in Space: </h3>
-         <p id="time-display">Time in Space</p>
-      </div>
+    <div id="age-time">
+     <h3>Age:</h3>
+      <p>
+       <span id="age-display">Age:</span>
+      </p>
+     <h3>Time in Space: </h3>
+       <p id="time-display">Time in Space</p>
+    </div>
     
+    <!------------------- Satellite Input --------------------->
+    <div class="satellite-input">
+      <form class="satellite-form">
+        <h3>Satellite Search</h3>
+        <p>
+          Input latitude and longitude coordinates to display a location's
+          landsat image!
+        </p>
 
+        <input
+          type="text"
+          name="latitude"
+          value=""
+          placeholder="Latitude (ex: 40.73)"
+          class="input-float"
+        />
+        <br />
+        <input
+          type="text"
+          name="longitude"
+          value=""
+          placeholder="Longitude (ex: -73.97)"
+          class="input-float"
+        />
+        <br />
+        <input type="submit" name="search" value="Search" class="submit" />
+      </form>
+    </div>
+    <div class="satellite-display">
+      <p id="current-lat-long">
+        Current latitude: 1.5; current longitude: 100.75
+      </p>
+      <img
+        id="satellite-placeholder"
+        src="https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/thumbnails/78ef0163adc2d4981e96b6a47dbccd48-29806e1b902f4d0fabeb4787184d278a:getPixels"
+        ,
+        alt="placeholder satellite image"
+      />
+    </div>
     <script type="module" src="./src/index.js"></script>
   </body>
 </html>

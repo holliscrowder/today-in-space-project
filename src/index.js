@@ -25,7 +25,7 @@ const submitMailingList = () => {
       email: event.target.email.value,
     };
 
-    // persist new subscriber to the background
+    // persist new subscriber to the backend
     const postNewSubscriber = async () => {
       response = await fetch("http://localhost:3000/mailingList", {
         method: "POST",
@@ -167,6 +167,38 @@ const handleClick = (person) => {
   peopleDetailTimeInSpace.textContent = person["time in space"];
 };
 
+// satelite input form submit
+const satelliteForm = document.querySelector(".satellite-form");
+let satellitePlaceholder = document.querySelector("#satellite-placeholder");
+let satelliteCurrentLatLong = document.querySelector("#current-lat-long");
+
+const submitSatellite = () => {
+  satelliteForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const newSearch = {
+      lat: event.target.latitude.value,
+      lon: event.target.longitude.value,
+    };
+
+    const dimSearch = 0.1;
+    const dateSearch = "2014-03-07";
+
+    // get request satellite image using lat & long parameters
+    const fetchNewSatellite = async () => {
+      const response = await fetch(
+        `https://api.nasa.gov/planetary/earth/assets?lon=${newSearch.lon}&lat=${newSearch.lat}&date=${dateSearch}&dim=${dimSearch}&api_key=${API_KEY}`
+      );
+      const newSatellite = await response.json();
+      satellitePlaceholder.src = newSatellite.url;
+      satelliteCurrentLatLong.textContent = `Current latitude: ${newSearch.lat}; current longitude: ${newSearch.lon}`;
+      console.log(satelliteCurrentLatLong);
+    };
+    fetchNewSatellite();
+    event.target.reset();
+  });
+};
+
 // run code that needs to be executed after the DOM has loaded
 const main = () => {
   document.addEventListener("DOMContentLoaded", () => {
@@ -174,6 +206,7 @@ const main = () => {
     addAPOD();
     // Invoke displayPeople here
     displayPeople();
+    submitSatellite();
   });
 };
 
