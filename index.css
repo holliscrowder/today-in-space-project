@@ -117,17 +117,18 @@ button:hover {
   left: 30%;
   height: auto;
   width: 45%;
+  z-index: 1; 
 }
 
 #apod-img-explanation {
   position: relative;
-  float: left;
   background-color: black;
   opacity: 0.6;
   color: white;
   width: 75%;
-  top: 100%;
   text-align: center;
+  z-index: 2; 
+  top: -10%;
 }
 
 #apod-img-button {
@@ -144,6 +145,7 @@ button:hover {
   opacity: 0.5;
   margin-top: -1.5rem; 
   transform: translateY(-50%);
+  z-index: 2;
 }
 #apod-img-button:hover {
   background-color: black;
