@@ -98,12 +98,28 @@ button:hover {
 }
 
 .title {
-  font-size: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: #333333;
-  border-bottom: 2px solid #cccccc;
-  padding-bottom: 5px;
-  font-family: monospace;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  color: #222;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.title:after,
+.title:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  height: 5px;
+  background-color: #f8f8f8;
 }
 
 #apod-video {
