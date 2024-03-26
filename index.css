@@ -211,9 +211,8 @@ button:hover {
 }
 #age-time {
   position: relative;
-  top: -100px;
-  margin-left: 40%;
-} 
+  padding: 100px;
+}
 
 /* Satellite */
 
