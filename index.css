@@ -216,3 +216,22 @@ button:hover {
 .nationality {
   bottom: 28%;
 }
+
+.satellite-form {
+  position: relative;
+  left: 20%;
+}
+
+.satellite-display p {
+  position: relative;
+  left: 20%;
+  top: 10%;
+}
+
+#satellite-placeholder {
+  position: relative;
+  left: 20%;
+  height: 60%;
+  width: 60%;
+  bottom: 5%;
+}
