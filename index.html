@@ -17,40 +17,39 @@
       <form class="add-space-form">
         <h3>Subscribe!</h3>
 
-        <input
-          type="text"
-          name="name"
-          value=""
-          placeholder="Name"
-          class="input-text"
-        />
-        <br />
-        <input
-          type="text"
-          name="email"
-          value=""
-          placeholder="Email"
-          class="input-text"
-        />
-        <br />
+        <input type="text" name="name" value="" placeholder="Name" class="input-text"/>
+        <br/>
+        <input type="text" name="email" value="" placeholder="Email" class="input-text"/>
+        <br/>
         <input type="submit" name="submit" value="Subscribe" class="submit" />
       </form>
     </div>
-    <p style="text-align: center">
+    <p style="text-align: left">
       Subscribe to receive our daily newsletter
       <button id="new-space-btn">Subscribe!</button>
     </p>
     <div id="space-collection">
-      <p id="apod-title">NASA Photo of the Day</p>
+      <p class="title" style="text-align: center">NASA Photo of the Day</p>
     </div>
+
+    <div id="people-title">
+      <p class="title" style="text-align: center">People in space</p>
+    </div>
+    
     <div id="people-in-space"></div>
     
     <div id="people-detail">
       <img class="detail-image" src="http://localhost:3000/people" alt="austronaut" />
       <h2 class="name"></h2>
       <h3 class="nationality"></h3>
-      <h3 class="age-display">Age:</h3>
-      <h3 class="time-display">Time in Space: </h3>
+
+
+      <h3>Age:</h3>
+      <p>
+        <span id="age-display">Age:</span>
+      </p>
+      <h3>Time in Space: </h3>
+      <p id="time-display">Time in Space</p>
     </div>
     <script type="module" src="./src/index.js"></script>
   </body>
