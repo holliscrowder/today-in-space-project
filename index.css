@@ -169,12 +169,15 @@ button:hover {
 #people-in-space {
   display: flex;
   overflow-x: auto;
+  justify-content: center;
 }
 
 #people-in-space img {
   flex: 0 1 auto;
   height: 150px;
   cursor: pointer;
+  padding-right: 20px;
+  padding-bottom: 20px; 
 }
 
 #people-in-space img:last-child {
@@ -183,6 +186,7 @@ button:hover {
 /* people in space detailed */
 
  #people-detail {
+  margin-top: 20px; 
   position: relative;
   margin-left: 40%;
 } 
