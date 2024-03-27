@@ -130,6 +130,7 @@ button:hover {
 #space-collection-image {
   position: relative;
   display: inline-block;
+  left: 14%;
 }
 
 #apod-img-explanation {
@@ -139,7 +140,7 @@ button:hover {
   color: white;
   width: 40%;
   text-align: center;
-  top: 20%; 
+  top: 20%;
   left: 30%;
   z-index: 2;
 }
@@ -179,7 +180,6 @@ button:hover {
   padding-right: 20px;
   padding-bottom: 20px;
 }
-
 
 /* people in space detailed */
 
