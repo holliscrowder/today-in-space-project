@@ -114,23 +114,16 @@ button:hover {
 
 /* NASA photo of the day */
 
-#apod-video {
-  position: flex;
-  height: 300px;
-  width: 600px;
-}
-
 #apod-img {
   position: relative;
-  left: 25%;
-  height: auto;
-  width: 50%;
-  z-index: 1;
+  width: 60%;
+  left: 20%;
 }
+
 #space-collection-image {
   position: relative;
-  display: inline-block;
-  left: 14%;
+  width: 60%;
+  left: 20%;
 }
 
 #apod-img-explanation {
@@ -143,6 +136,14 @@ button:hover {
   top: 20%;
   left: 30%;
   z-index: 2;
+}
+
+/* Apod Video */
+
+#apod-video {
+  position: flex;
+  height: 300px;
+  width: 600px;
 }
 
 #apod-video-button {
