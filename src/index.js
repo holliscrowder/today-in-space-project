@@ -61,16 +61,17 @@ const addAPOD = () => {
       // apodDIV.append(apodImg, apodImgButton);
       apodDIV.append(apodImg);
 
-      // add explanation when "explanation" button is clicked
+      // add explanation when image is moused-over
       const apodImgExplanation = document.createElement("p");
       apodImgExplanation.id = "apod-img-explanation";
       apodImgExplanation.textContent = apod.explanation;
       let imgExplanationFlag = false;
+
       apodImg.addEventListener("mouseover", () => {
         imgExplanationFlag = !imgExplanationFlag;
         apodDIV.append(apodImgExplanation);
         if (imgExplanationFlag) {
-          apodImgExplanation.style.display = "block";
+          apodImgExplanation.style.display = "inline-block";
         } else {
           apodImgExplanation.style.display = "none";
         }
