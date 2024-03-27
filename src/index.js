@@ -49,7 +49,7 @@ const addAPOD = () => {
       `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`
     );
     const apod = await response.json();
-    const apodDIV = document.querySelector("#space-collection");
+    const apodDIV = document.querySelector("#space-collection-image");
 
     // display APOD image
     if (apod.media_type === "image") {
