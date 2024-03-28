@@ -185,14 +185,14 @@ button:hover {
 /* people in space detailed */
 
 #people-detail {
-  margin-top: 20px;
   position: relative;
-  margin-left: 40%;
+  width: 60%;
+  left: 35%;
 }
 
 .detail-image {
-  height: 30%;
-  width: 30%;
+  height: 50%;
+  width: 50%;
 }
 
 .name {
