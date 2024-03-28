@@ -57,6 +57,7 @@ const addAPOD = () => {
       apodImg.id = "apod-img";
       apodImg.src = apod.url;
       apodImg.alt = "NASA photo of the day";
+      console.log(apodImg)
 
       // apodDIV.append(apodImg, apodImgButton);
       apodDIV.append(apodImg);
@@ -88,7 +89,7 @@ const addAPOD = () => {
       apodVideo.poster =
         "https://i0.wp.com/www.sciencenews.org/wp-content/uploads/2020/04/041520_mt_supernova_feat.jpg?fit=1028%2C579&ssl=1";
       apodVideo.allowFullscreen = "true";
-
+      
       // add video "explanation" button
       const apodVideoButton = document.createElement("button");
       apodVideoButton.id = "apod-video-button";
@@ -115,6 +116,8 @@ const addAPOD = () => {
   };
   fetchAPOD();
 };
+
+
 
 const displayPeople = async () => {
   try {

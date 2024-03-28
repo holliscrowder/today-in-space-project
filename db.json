@@ -2,11 +2,18 @@
   "mailingList": [
     {
       "name": "user1",
-      "email": "user1@gmail.com"
+      "email": "user1@gmail.com",
+      "id": "a6ad"
     },
     {
       "name": "user2",
-      "email": "user2@gmail.com"
+      "email": "user2@gmail.com",
+      "id": "be6d"
+    },
+    {
+      "id": "ac73",
+      "name": "",
+      "email": ""
     }
   ],
   "people": [
